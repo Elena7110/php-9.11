@@ -1,0 +1,23 @@
+body {  /*стили для страницы*/
+	position: absolute;
+	padding: 30px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	background-color: rgb(251, 255, 149);
+	color: rgb(130, 118, 108);
+	width: 100%;
+}
+
+.container{ /*стили для текста контейнера генерации*/
+	color: rgb(174, 20, 0);
+}
+
+.card-header{/*стили для шапки контейнера генерации*/
+	background-color: rgb(186, 255, 143);
+}
+
+.text-center{ /*стили для рамки контейнера генерации*/
+	border: 2px double rgb(91, 200, 23);
+}

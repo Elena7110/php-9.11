@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><!--атрибут lang определяет язык содержимого элемента.-->
+
+<head>	<!--метаданные-->
+	<meta charset="UTF-8" />	<!--атрибут / параметр charset (от англ. "charset" ‒ «кодировка») указывает кодировку символов, используемую в документе. UTF-8 - одна из общепринятых и стандартизированных кодировок текста, поддерживающая множество различных письменностей.-->
+	<title>Генератор случайных пользователей</title>	<!--определяет заголовок документа, который отображается в заголовке окна браузера или на вкладке страницы.-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />	<!--подключение стилей-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet" />	<!--подключение шрифтов-->
+	<link rel="stylesheet" href="style.css" type="text/css" />	<!--подключение файла стилей-->
+</head>
+
+<body>	<!--тело документа-->
+	<div class="container"><!--контейнер, содержащий элементы страницы-->
+		<div class="row game-card align-items-center">
+			<div class="col col-md-6 offset-md-3">
+				<div class="card text-center"><!--элементы с результатами генерации-->
+					<div class="card-header">
+						<p class="m-0">Окно результатов генерации</p>
+					</div>
+					<div class="card-body">
+						<div class="row">
+							<div class="col">
+								<h3 class="card-title">
+									Фамилия: <span id="surnameOutput">Генерация фамилии</span><!--элемент, выводящий результат генерации фамилии-->
+								</h3>
+								<h4>
+									Имя: <span id="firstNameOutput">Генерация имени</span><!--элемент, выводящий результат генерации имени-->
+								</h4>
+								<h4>
+									Отчество: <span id="fatherNameOutput">Генерация отчества</span><!--элемент, выводящий результат генерации отчества-->
+								</h4>
+								<p>
+									<span id="genderOutput">Генерация пола</span><!--элемент, выводящий результат генерации пола-->
+
+									<span id="birthDayOutput">Генерация даты рождения</span><!--элемент, выводящий результат генерации даты рождения-->
+									<span id="birthMonthOutput">Генерация месяца рождения</span><!--элемент, выводящий результат генерации месяца рождения-->
+									<span id="birthYearOutput">Генерация года рождения</span><!--элемент, выводящий результат генерации года рождения-->
+
+									<span id="professionOutput">Профессия</span><!--элемент, выводящий результат генерации фамилии-->
+								</p>
+								<div class="buttons"><!--блок с кнопками управления-->
+									<button id="btnUpdate">Генерировать</button><!--кнопка, активирующая генерацию рандомных даннных-->
+									<button id="btnRetry">Сбросить</button><!--кнопка сброса-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="personGenerator.js"></script>
+	<script src="init.js"></script>
+</body>
+
+</html>
